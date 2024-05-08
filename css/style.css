@@ -1,0 +1,428 @@
+/* Font Family*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+*,
+*:focus,
+*:active,
+*:hover {
+    border: none;
+    box-shadow: none;
+    outline: none;
+}
+
+body,
+section {
+    margin: 0;
+    padding: 0;
+}
+
+/*
+====================
+ Basic Design
+====================
+*/
+
+:root {
+    --primary-color: #800080;
+    --secondary-color: #c311c3;
+    --third-color: #a517ba;
+    --white-color: #d2d2d2;
+    --black-color: #000;
+    --dark-color: #2A2F33;
+    --primary-text: #fff;
+    --secondary-text: #d3d3d3;
+    --primary-font: "Poppins", sans-serif;
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-family: var(--primary-font);
+    color: var(--primary-text);
+}
+
+h2 {
+    font-size: 2.7rem;
+    font-family: var(--primary-font);
+    color: var(--primary-text);
+}
+
+h3 {
+    font-size: 2.4rem;
+    font-family: var(--primary-font);
+    color: var(--primary-text);
+}
+
+h4 {
+    font-size: 2rem;
+    font-family: var(--primary-font);
+    color: var(--primary-text);
+}
+
+h5 {
+    font-size: 1.2rem;
+    font-family: var(--primary-font);
+    color: var(--primary-text);
+}
+
+p {
+    color: var(--white-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--white-color);
+    font-weight: 500;
+    font-family: var(--primary-font);
+}
+
+.heading {
+    color: var(--primary-color);
+    margin-bottom: 4rem;
+}
+
+/* Button styling */
+.primary-btn {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    font-size: 1rem;
+    padding: 0.478rem 1.2rem;
+    transition: all 0.4s linear;
+    font-weight: 500;
+}
+
+.primary-btn:hover {
+    background-color: var(--white-color);
+    color: var(--primary-color);
+    transform: scale(1.02);
+}
+
+.secondary-btn {
+    background-color: var(--white-color);
+    color: var(--primary-color);
+    font-size: 1rem;
+    padding: 0.478rem 1.2rem;
+    transition: all 0.4s linear;
+    font-weight: 500;
+}
+
+.secondary-btn:hover {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    transform: scale(1.03);
+}
+
+
+/*
+====================
+ Navbar Design
+====================
+*/
+
+.navbar-wrapper {
+    background-image: linear-gradient(to right, #a517ba, #5f1782);
+}
+
+.nav-item {
+    margin: 0 0.257rem;
+}
+
+.nav-item .nav-link {
+    color: var(--white-color);
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 0.16rem 1.2rem;
+    float: right;
+    text-align: left;
+}
+
+.nav-item .nav-link:hover {
+    color: #efefef;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler:hover {
+    outline: none !important;
+    border: none;
+    box-shadow: none;
+}
+
+
+
+/*
+====================
+ Home Design
+====================
+*/
+
+.home {
+    background-image: linear-gradient(to right, #a517ba, #5f1782);
+    width: 100%;
+    height: auto;
+    padding-top: 4rem;
+}
+
+.home h1 {
+    font-size: 4.5rem;
+}
+
+.play-btn {
+    color: var(--white-color);
+    font-size: 1rem;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.play-btn:hover {
+    font-size: 1rem;
+}
+
+.play-btn img {
+    width: 30px;
+    height: auto;
+    margin-right: 1rem;
+}
+
+.home-2 {
+    animation-name: bgimg;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes bgimg {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-30px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+
+/*
+====================
+ About Design
+====================
+*/
+
+.about {
+    width: 100%;
+    height: auto;
+    padding: 3rem 0;
+}
+
+.about .heading {
+    color: var(--primary-color);
+    margin-bottom: 3.5rem;
+}
+
+.about .card {
+    transition: all 0.4s ease-in-out;
+    padding: 1rem 0;
+}
+
+.about .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0.5px 0.6px 2px var(--dark-color);
+}
+
+.about .card .card-title {
+    color: var(--third-color);
+}
+
+.about .card .card-text {
+    color: var(--dark-color);
+    font-weight: 400;
+}
+
+.about .primary-btn {
+    background-image: linear-gradient(to right, #a517ba, #5f1782);
+    transition: all 0.5 linear;
+}
+
+.about .primary-btn:hover {
+    color: #fff;
+    transform: scale(1.035);
+}
+
+
+
+/*
+====================
+Choose-us Design
+====================
+*/
+
+.choose-us {
+    width: 100%;
+    height: 100 auto;
+    padding: 3rem 0;
+    background-color: #effafdb3;
+}
+
+.choose-us .heading,
+.choose-us .sub-heading {
+    position: relative;
+    color: var(--primary-color);
+    margin-bottom: 4rem;
+}
+
+.choose-us .heading {
+    margin: 0 auto;
+    margin-bottom: 4rem;
+}
+
+
+.choose-us .heading::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    /* transform: translateX(-50%); */
+    height: 4px;
+    width: 100%;
+    background-image: linear-gradient(to right, #a517ba, #5f1782);
+    border-radius: 90%;
+}
+
+.choose-us .sub-heading {
+    margin-bottom: 2rem;
+    font-size: 2.1rem;
+}
+
+.choose-us ul li {
+    margin: 0.725rem 0;
+}
+
+
+
+/*
+====================
+ Testimonials Section
+====================
+*/
+
+.testimonial {
+    width: 100%;
+    height: 100 auto;
+    padding: 3rem 0;
+}
+
+.testimonial .heading {
+    color: var(--primary-color);
+    margin-bottom: 4rem;
+}
+
+.testimonial .box {
+    border-left: 5px solid var(--third-color);
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.testimonial .box:hover {
+    transform: translateY(-5px);
+}
+
+.testimonial .info img {
+    width: 12%;
+    height: auto;
+}
+
+.testimonial .info .text-content {
+    display: inline-block;
+}
+
+.testimonial .info .text-content h5 {
+    color: var(--dark-color);
+    font-size: 0.89rem;
+    margin-bottom: 0;
+}
+
+.testimonial .info .text-content p {
+    color: var(--dark-color);
+    font-size: 0.89rem;
+}
+
+.testimonial .text {
+    color: var(--dark-color);
+
+}
+
+
+/*
+====================
+ Social-Media section
+====================
+*/
+
+.social-media {
+    width: 100%;
+    height: auto;
+    padding: 3rem 0;
+}
+
+.social-media .icons img {
+    width: 14%;
+    height: auto;
+    transition: all 0.5s ease-in-out;
+}
+
+.social-media .icons img:hover {
+    transform: translateY(-10px);
+}
+
+
+/*
+====================
+ Footer section
+====================
+*/
+
+.footer {
+    background-image: linear-gradient(to right, #a517ba, #5f1782);
+    padding-bottom: 0rem;
+}
+
+.footer .footer-img {
+    margin-bottom: 1rem;
+}
+
+.footer .footer-box img:nth-child(1) {
+    margin-bottom: 1rem;
+}
+
+.footer .footer-box input:nth-child(1):hover,
+.footer .footer-box input:nth-child(1):active,
+.footer .footer-box input:nth-child(1):focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+
+.footer .copyright p {
+    margin: 0;
+    text-align: center;
+    font-weight: 600;
+    padding-bottom: 1rem;
+}
+
+hr {
+    color: #fff;
+    opacity: 1;
+}
